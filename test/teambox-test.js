@@ -45,8 +45,9 @@ describe('Teambox', function () {
 
             scope = nock("https://www.teambox.com").get("/api/2/projects").reply(200, teamboxResponse);
             teambox = Teambox.createClient({bla: 1, username: "bla", password: "bla"});
-            teambox.Projects.all(function (err, data) {
-                expect(data).to.equal(JSON.stringify(teamboxResponse));
+            teambox.Projects.all(function (err, data, json) {
+                expect(data.length).to.equal(1);
+                expect(data[0].id).to.equal(825536);
             });
         });
 
@@ -73,8 +74,8 @@ describe('Teambox', function () {
 
             scope = nock("https://www.teambox.com").get("/api/2/projects/825536").reply(200, teamboxResponse);
             teambox = Teambox.createClient({bla: 1, username: "bla", password: "bla"});
-            teambox.Projects.find("825536", function (err, data) {
-                expect(data).to.equal(JSON.stringify(teamboxResponse));
+            teambox.Projects.find("825536", function (err, data, json) {
+                expect(data.id).to.equal(825536);
             });
         });
     });
@@ -171,8 +172,9 @@ describe('Teambox', function () {
 
             scope = nock("https://www.teambox.com").get("/api/2/tasks").reply(200, teamboxResponse);
             teambox = Teambox.createClient({bla: 1, username: "bla", password: "bla"});
-            teambox.Tasks.all(function (err, data) {
-                expect(data).to.equal(JSON.stringify(teamboxResponse));
+            teambox.Tasks.all(function (err, data, json) {
+                expect(data.length).to.equal(1);
+                expect(data[0].id).to.equal(8917310);
             });
         });
 
@@ -266,7 +268,7 @@ describe('Teambox', function () {
             scope = nock("https://www.teambox.com").get("/api/2/tasks/8917310").reply(200, teamboxResponse);
             teambox = Teambox.createClient({bla: 1, username: "bla", password: "bla"});
             teambox.Tasks.find("8917310", function (err, data) {
-                expect(data).to.equal(JSON.stringify(teamboxResponse));
+                expect(data.id).to.equal(8917310);
             });
         });
     });
@@ -356,8 +358,9 @@ describe('Teambox', function () {
 
             scope = nock("https://www.teambox.com").get("/api/2/conversations").reply(200, teamboxResponse);
             teambox = Teambox.createClient({bla: 1, username: "bla", password: "bla"});
-            teambox.Conversations.all(function (err, data) {
-                expect(data).to.equal(JSON.stringify(teamboxResponse));
+            teambox.Conversations.all(function (err, data, json) {
+                expect(data.length).to.equal(1);
+                expect(data[0].id).to.equal(804377);
             });
         });
 
@@ -443,7 +446,7 @@ describe('Teambox', function () {
             scope = nock("https://www.teambox.com").get("/api/2/conversations/804377").reply(200, teamboxResponse);
             teambox = Teambox.createClient({bla: 1, username: "bla", password: "bla"});
             teambox.Conversations.find("804377", function (err, data) {
-                expect(data).to.equal(JSON.stringify(teamboxResponse));
+                expect(data.id).to.equal(804377);
             });
         });
     });
