@@ -1,0 +1,38 @@
+{
+  "name": "node-teambox",
+  "version": "0.0.0",
+  "description": "Teambox API node module",
+  "main": "gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:orlando/node-teambox.git"
+  },
+  "keywords": [
+    "node",
+    "teambox",
+    "teambox",
+    "api"
+  ],
+  "author": "Orlando Del Aguila",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/orlando/node-teambox/issues"
+  },
+  "homepage": "https://github.com/orlando/node-teambox",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-mocha-test": "~0.8.1",
+    "sinon": "~1.7.3",
+    "chai": "~1.8.1",
+    "sinon-chai": "~2.4.0",
+    "nock": "~0.27.1"
+  }
+}
