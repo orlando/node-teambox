@@ -23,15 +23,20 @@ client.Projects.all(function (err, projects) {
 });
 ```
 # Implemented endpoints
+
 ## Activities
+
 | Resource | Description |
 |:--------:|:------------|
 |          |             |
 ## Attachments
+
 | Resource | Description |
 |:--------:|:------------|
 |          |             |
+
 ## Projects
+
 | Resource | Description |
 |:--------:|:------------|
 |GET /api/2/projects |Lists projects|
@@ -42,6 +47,7 @@ client.Projects.all(function (err, projects) {
 |GET /api/2/projects/:id/metadata |Return all the metadata|
 
 ## Tasks
+
 | Resource | Description |
 |:--------:|:------------|
 |GET /api/2/tasks |Lists tasks|
@@ -51,7 +57,9 @@ client.Projects.all(function (err, projects) {
 |DELETE /api/2/tasks/:id |Deletes a tasks|
 |GET /api/2/tasks/:id/metadata |Return all the metadata|
 |PUT /api/2/tasks |Reorder tasks|
+
 ## Conversations
+
 | Resource | Description |
 |:--------:|:------------|
 |GET /api/2/conversations |Lists conversations|
@@ -59,3 +67,11 @@ client.Projects.all(function (err, projects) {
 # Development
 
 This library uses grunt for development. You can run tests with `grunt test`
+
+# Contributing
+
+1. Create an issue/ Pick and issue.
+2. Fork the repo.
+3. Create a branch.
+4. Fix the issue.
+5. Create a pull request.
