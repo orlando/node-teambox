@@ -27,18 +27,19 @@ client.Projects.all(function (err, projects) {
 ## Activities
 
 | Resource | Description |
-|:--------:|:------------|
+|:---------|:------------|
 |          |             |
+
 ## Attachments
 
 | Resource | Description |
-|:--------:|:------------|
+|:---------|:------------|
 |          |             |
 
 ## Projects
 
 | Resource | Description |
-|:--------:|:------------|
+|:---------|:------------|
 |GET /api/2/projects |Lists projects|
 |GET /api/2/projects/:id |Project detail|
 |POST /api/2/projects |Create a new project|
@@ -49,7 +50,7 @@ client.Projects.all(function (err, projects) {
 ## Tasks
 
 | Resource | Description |
-|:--------:|:------------|
+|:---------|:------------|
 |GET /api/2/tasks |Lists tasks|
 |GET /api/2/tasks/:id |Task detail|
 |POST /api/2/tasks |Create a new task|
@@ -61,7 +62,7 @@ client.Projects.all(function (err, projects) {
 ## Conversations
 
 | Resource | Description |
-|:--------:|:------------|
+|:---------|:------------|
 |GET /api/2/conversations |Lists conversations|
 
 # Development
