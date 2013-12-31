@@ -46,10 +46,10 @@ client.Projects.all(function (err, projects) {
 |GET /api/2/projects/:id/activities |Project's activities list|
 |GET /api/2/projects/:id/conversations |Project's conversations list|
 |GET /api/2/projects/:id/attachments |Project's attachments list|
+|GET /api/2/projects/:id/comments |Project's comments list|
 |POST /api/2/projects |Create a new project|
 |PUT /api/2/projects/:id |Updates a project|
 |DELETE /api/2/projects/:id |Deletes a project|
-|GET /api/2/projects/:id/metadata |Return all the metadata|
 
 ## Tasks
 
@@ -60,7 +60,7 @@ client.Projects.all(function (err, projects) {
 |POST /api/2/tasks |Create a new task|
 |PUT /api/2/tasks/:id |Updates a task|
 |DELETE /api/2/tasks/:id |Deletes a tasks|
-|GET /api/2/tasks/:id/metadata |Return all the metadata|
+|GET /api/2/tasks/:id/comments |Task's comments list|
 
 ## Conversations
 
@@ -71,6 +71,17 @@ client.Projects.all(function (err, projects) {
 |POST /api/2/conversations |Create a new conversation|
 |PUT /api/2/conversations/:id |Updates a conversation|
 |DELETE /api/2/conversations/:id |Deletes a conversation|
+|GET /api/2/conversations/:id/comments |Conversation's comments list|
+
+## Comments
+
+| Resource | Description |
+|:---------|:------------|
+|GET /api/2/comments |List comments|
+|GET /api/2/comments/:id |Comment detail|
+|POST /api/2/comments |Create a new comment|
+|PUT /api/2/comments/:id |Updates a comment|
+|DELETE /api/2/comments/:id |Deletes a comment|
 
 # Development
 
