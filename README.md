@@ -50,6 +50,7 @@ client.Projects.all(function (err, projects) {
 |POST /api/2/projects |Create a new project|
 |PUT /api/2/projects/:id |Updates a project|
 |DELETE /api/2/projects/:id |Deletes a project|
+|POST /api/2/projects/:id/comments |Create a new comment a project|
 
 ## Tasks
 
@@ -61,6 +62,7 @@ client.Projects.all(function (err, projects) {
 |PUT /api/2/tasks/:id |Updates a task|
 |DELETE /api/2/tasks/:id |Deletes a tasks|
 |GET /api/2/tasks/:id/comments |Task's comments list|
+|POST /api/2/tasks/:id/comments |Create a new comment a task|
 
 ## Conversations
 
@@ -72,6 +74,7 @@ client.Projects.all(function (err, projects) {
 |PUT /api/2/conversations/:id |Updates a conversation|
 |DELETE /api/2/conversations/:id |Deletes a conversation|
 |GET /api/2/conversations/:id/comments |Conversation's comments list|
+|POST /api/2/conversations/:id/comments |Create a new comment a conversation|
 
 ## Comments
 
