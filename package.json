@@ -1,6 +1,6 @@
 {
   "name": "node-teambox",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Teambox API node module",
   "main": "lib/teambox.js",
   "directories": {
