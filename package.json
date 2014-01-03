@@ -1,6 +1,6 @@
 {
   "name": "node-teambox",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Teambox API node module",
   "main": "gruntfile.js",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:orlando/node-teambox.git"
+    "url": "git@bitbucket.org:_orlando/node-teambox.git"
   },
   "keywords": [
     "node",
