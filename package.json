@@ -1,6 +1,6 @@
 {
   "name": "node-teambox",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Teambox API node module",
   "main": "lib/teambox.js",
   "directories": {
@@ -34,5 +34,6 @@
     "chai": "~1.8.1",
     "sinon-chai": "~2.4.0",
     "nock": "~0.27.1"
-  }
+  },
+  "private": true
 }
